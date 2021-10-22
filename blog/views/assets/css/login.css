@@ -1,0 +1,114 @@
+body{
+    overflow-y: scroll;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.login{
+    width: 100%;
+    align-items: center;
+}
+
+.box_login{
+    width: 100%;
+}
+
+img{
+    display: flex;
+    margin: 0 auto;
+}
+
+.icon_mess{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+
+.text{
+    text-align: center;
+}
+
+.box_form{
+    width: 400px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form input{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 15px;
+    border-radius: 10px;
+    height: 45px;
+    border: solid 1px #999;
+    font-size: 16px; 
+}
+
+.input_send_tt:focus{
+    background-color: #e8f0fe;
+}
+
+.button_send{
+    display: flex;
+
+}
+
+
+#button{   
+    width: 95px;
+    height: 46px;
+    font-size: 16px;    
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #0a7cff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+    margin-top: 10px;
+}
+.box_checkbox{  
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+.box_checkbox span{
+    font-size: 12px;
+    margin: auto;
+}
+.box_checkbox input{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.text_checkbox{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    position: relative;
+    height: 40px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+}
+
+.link_footer_login{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+

@@ -1,0 +1,405 @@
+/* navbar user */
+.row:first-child{ 
+   height: 100vh;
+   border: rgb(238, 238, 238) solid 1px;
+}
+
+.navbar_row{
+    display:flex;
+    margin: 20px 12px 16px 16px;
+    height: 36px;
+    justify-content: space-between;
+}
+.img_user{
+    display: flex;
+}
+.img_user img{
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.img_user h1{
+    font-size: 24px;
+    margin: 0;
+}
+.action{
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+    height: 36px;
+    align-items: center;
+}
+
+.box_action{
+    width: 36px;
+    height: 36px; 
+    background-color: rgb(223, 223, 223);
+    border-radius: 100%;
+    z-index: 999;
+}
+
+.box_action svg{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 3px;
+    left: 3.5px;
+}
+
+.selection{
+    display: none;
+    width: 550px;
+    height: 50px;
+    background-color: red;
+   
+}
+
+.box_action:hover .selection{
+    display: block;
+}
+
+.search{
+    display: flex;
+    width: 300px;
+    height: 36px;
+    background-color: #e9e9e9;
+    border-radius: 30px; 
+    position: relative;
+    top: 6px;
+    margin: 0 auto;
+
+}
+
+#input_search{
+    position: relative;
+    outline: none;
+    border: none;
+    background-color:#e9e9e9 ;
+    width: 260px;
+    font-size: 16px;
+    color: rgba(0, 0, 0,0.8);
+    padding-left: 3px;
+    border-radius: 18px;
+    left: -34px;
+    
+}
+
+.icon_search{
+    margin: 0 10px;
+    width: 60px;
+}
+
+
+.friends_list{  
+    width: 360px;
+    position: relative;
+    display: block;
+    max-height: calc( 100vh - 150px);
+}
+
+.friends_list:hover .chat_friends{
+    overflow-y: auto;
+}
+.img_friend{
+    margin-left: 15px;
+    position: relative;
+    top: 6px;
+    height: 60px;
+    width: 60px;
+
+}
+.chat_friends{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: hidden;
+    height: calc(100vh - 140px);
+    width: calc(100% - 6px);
+}
+
+.img_list_user{
+    width: 60px;
+}
+
+.friend{ 
+    height: 72px;
+    position: relative;
+    display: flex;
+    padding-left: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.friend:hover{
+    background-color: rgba(173, 173, 173,0.5);
+}
+
+.name_friend ,.last_words{
+    display: block;
+    height: 26px;
+}
+
+
+
+.name_user{
+    font-size: 16px;
+    font-weight: 400;
+}
+.words{
+    font-size: 14px; 
+    font-weight: 300;
+}
+
+.box_information{
+    margin-left: 12px;
+    z-index: -1;
+}
+
+
+/* Box chat */
+
+.chat{
+  border-right: rgb(238, 238, 238) solid 1px;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.fa-search{
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navbar chat */
+
+.chat{
+    width: 100%;
+    height: 100vh;
+}
+
+.fixed_navbar_chat{
+    position: fixed;
+    left: 360px;
+    right: 360px;
+}
+.user-chat{
+    display: flex;
+    align-items: center;
+}
+.navbar_chat{
+    top: 10px;
+   justify-content: space-between;
+   width: 100%;
+   display: flex;
+}
+
+.chat_action{
+    align-items: center;
+    margin-right: 15px;
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
+.chat_action div{
+    cursor: pointer;
+}
+
+
+
+.chat_active div{
+    height: 50%;
+}
+
+.img_user_friend{
+    width: 50px;
+}
+
+.span_active{
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.link_information{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.link_information:hover{
+    text-decoration: underline;
+}
+.chat_name-user,.active{
+    display: flex;
+    max-height: 50%;
+    max-height: 100%;
+
+}
+
+.box_navbar_chat{
+    display: flex;
+    width: 100%;
+    line-height: 16px;
+    overflow: hidden;
+    height: 70px;
+    border: rgb(238, 238, 238) solid 1px;
+    border-left: none;
+    
+}
+
+.img_user-chat{
+    display: flex;
+    margin:0 0 5px 15px;
+    cursor: pointer;
+}
+
+.box_friends_list{
+    position: relative;
+    top: 140px;
+}
+    /* Form send message */
+
+.list_message{
+    margin: 0;
+    list-style: none;
+}
+
+.ulmessage_chat{
+    position: relative;
+    top: 70px;
+    max-height: calc(100vh - 68px - 54px);
+    overflow-y:auto;
+
+}
+
+.box_mess-send{
+    position: fixed;
+    bottom: 0;
+    right: 360px;
+    left: 360px;
+}
+
+.message_sen{
+    justify-content: space-between;
+    height: 54px;
+    position: relative;
+    top: calc( 100% - 50px);
+
+}
+.message_sen,.box_add_send{
+        display: flex;
+ }
+#input_mess{
+    
+    font-size: 16px;
+    color: rgba(0, 0, 0,0.8);
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+    min-height: 36px;
+    padding-left: 10px;
+}
+
+.boxform_chat{
+    display: flex;
+    width: 100%;
+    top: 9px;
+    position: relative;
+    margin-left: 8px;
+}
+
+.form_chat{
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 36px;
+    border-radius: 30px;
+    background-color: #e9e9e9;
+}
+
+.box_add_send div{
+    align-items: center;
+    display: flex;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.icon_send{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon_send svg{
+    cursor: pointer;
+}
+
+.add_icons{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.add_icons svg{
+    cursor: pointer;
+}
+
+.view_user{
+    width: 360px;
+}
+
+.view_img_user,.view_name{
+    display: flex;
+    
+}
+.view_img_user{
+    margin-top: 10px;
+}
+.view_name{
+    margin-top: 5px;
+}
+
+.view_img_user img,.view_name span{
+    margin: 0 auto;
+}
+
+.view_img_user img{
+  height: 80px;
+}
+.view_toadd{
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.view_toadd div{
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+}
+.view_toadd div:hover {
+    background-color: rgba(173, 173, 173,0.2);
+    border-radius: 5px;
+}
+
+.view_toadd span {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.fa-chevron-down{
+    position: relative;
+    top: 13px;
+    font-size: 16px;
+    align-items: center;
+    margin-right: 5px;
+}
+

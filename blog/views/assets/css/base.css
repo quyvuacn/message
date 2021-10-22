@@ -1,0 +1,120 @@
+*{
+    box-sizing: inherit;
+   
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+span{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+}
+h1{
+  margin: 0;
+}
+
+.row{
+    height: 100vh;
+    width: 360px;
+    display: block;
+    flex-wrap: wrap;
+    
+}
+.chat{
+    width: 100%;
+}
+
+.error{
+  display: flex;
+  margin-bottom: 4px;
+}
+.send_error{
+  color: red;
+  font-size: 16px;
+  height: 20px;
+}
+
+.img_users{
+    border-radius: 100%;
+}
+
+.box_navbar{
+    position: fixed;
+    width: 360px;
+    height: 140px;
+
+}
+
+.message{
+    display: flex;
+    overflow: hidden;
+}
+
+.activatetrue{
+  height: 14px;
+    width: 14px;
+    background-color: #5ad539;
+    border-radius: 100%;
+    border: white 2px solid;
+    position: relative;
+    bottom: 26px;
+    left: 45px;
+}
+.activatetrue_2{
+  height: 15px;
+  width: 15px;
+  background-color: #5ad539;
+  border-radius: 100%;
+  border: white 2px solid;
+  position: relative;
+  top: 35px;
+  right: 13px;
+}
+
+.hide{
+  display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #999; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  
+    position: relative;
+    
+  }
+
+  
+
+  ::-webkit-input-placeholder { 
+    color: #777;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .body{
+    display: flex;
+  }
